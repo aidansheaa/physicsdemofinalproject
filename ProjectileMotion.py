@@ -7,7 +7,10 @@ import pyplot as plt
 tinitial = 0.0
 gravity = 9.8
 initialposition = [0, 0, 0]
+positionx = initialposition(0)
+positiony = initialposition(1)
 acceleration = [0, -(gravity), 0]
+del_t = 0.1
 
 #sliders
 mass = 
@@ -26,7 +29,8 @@ finalvelocityy = initialvelocity(1) + (acceleration(1)) * (tfinal)
 
 
 while positionx > 0 or positiony > 0:
-    
+    positionx += finalvelocityx * (del_t)
+    positiony += finalvelocityy * (del_t)
 
 #graphing
 plt.plot(x, y)
