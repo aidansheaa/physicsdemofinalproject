@@ -28,7 +28,7 @@ finalpositiony = initialposition(1) + initialvelocity(1) * tfinal + (1/2) * (acc
 finalvelocityy = initialvelocity(1) + (acceleration(1)) * (tfinal)
 
 
-while positionx > 0 or positiony > 0:
+while positionx > 0 and positiony > 0:
     positionx += finalvelocityx * (del_t)
     positiony += finalvelocityy * (del_t)
 
