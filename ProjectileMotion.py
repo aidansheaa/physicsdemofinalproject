@@ -28,7 +28,7 @@ s1 = Scale( root, variable = v1,
            from_ = 1, to = 100, 
            orient = HORIZONTAL)   
 
-l3 = Label(root, text = "Horizontal Scaler")
+l3 = Label(root, text = "Mass Scaler")
 
 b1 = Button(root, text ="Display Horizontal", 
             command = show1, 
