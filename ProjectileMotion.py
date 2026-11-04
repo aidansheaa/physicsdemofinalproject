@@ -4,6 +4,8 @@ import tkinter as tk
 
 t = 0
 gravity = 9.8
+
+#massslider
 current_value = tk.DoubleVar()
 slider = ttk.Scale(
     root,
