@@ -33,7 +33,7 @@ while positionx > 0 or positiony > 0:
     positiony += finalvelocityy * (del_t)
 
 #graphing
-plt.plot(x, y)
+plt.plot(positionx, positiony)
 plt.title('Graph of Projectile Motion')
 plt.xlabel('Horizontal distance')
 plt.ylabel('Vertical Distance')
