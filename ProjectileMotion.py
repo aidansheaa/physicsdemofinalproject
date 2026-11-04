@@ -1,19 +1,16 @@
 import math
 import tkinter as tk
 from tkinter import ttk
+import pyplot as plt
 
-
-t = 0
+#constants
+tinitial = 0.0
 gravity = 9.8
+initialposition = [0, 0, 0]
+acceleration = [0, -(gravity), 0]
 
-S = Scale(root, bg, fg, bd, command, orient, from_, to, ..) 
-    orient='horizontal',
-    variable=current_value)
-
-from tkinter import * 
-
-
-root = Tk()  
+#sliders
+mass = root = Tk()  
 root.geometry("400x300") 
 
 v1 = DoubleVar()
@@ -28,7 +25,7 @@ s1 = Scale( root, variable = v1,
            from_ = 1, to = 100, 
            orient = HORIZONTAL)   
 
-l3 = Label(root, text = "Mass Scaler")
+l3 = Label(root, text = "Horizontal Scaler")
 
 b1 = Button(root, text ="Display Horizontal", 
             command = show1, 
@@ -43,3 +40,30 @@ b1.pack(anchor = CENTER)
 l1.pack() 
 
 root.mainloop()
+
+
+initialangle = 
+
+initialvelocityval  = 
+
+
+#equations 
+intialvelocity = [(initialvelocityval) * math.cos(initialangle), (initialvelocityval) * math.sin(initialangle), 0 ]
+finalpositionx = initialposition(0) + initialvelocity(0) * tfinal + (1/2) * (acceleration(0)) * (tfinal**2)
+finalvelocityx = initialvelocity(0) + (acceleration(0)) * (tfinal)
+finalpositiony = initialposition(1) + initialvelocity(1) * tfinal + (1/2) * (acceleration(1)) * (tfinal**2)
+finalvelocityy = initialvelocity(1) + (acceleration(1)) * (tfinal)
+
+distancex = finalpositionx - initialposition(0)
+distancey = finalpositiony - initialposition(1)
+
+while positionx > 0 or positiony > 0:
+    
+
+#graphing
+plt.plot(x, y)
+plt.title('Graph of Projectile Motion')
+plt.xlabel('Horizontal distance')
+plt.ylabel('Vertical Distance')
+plt.grid(True)
+plt.show()
